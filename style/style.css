@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset CSS */
 * {
     padding: 0;
     margin: 0;
 
     box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
 }
 
+/* Header e footer */
 header {
     position: fixed;
 
@@ -36,6 +41,7 @@ header {
     
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 footer {
@@ -49,8 +55,43 @@ footer {
     
     color: white;
     font-size: 1.5rem;
+
+    padding-bottom: 20px;
 }
 
 .logo-footer {
     width: 300px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.696);
+}
+
+.hero video {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 90vh;
+
+    object-fit: cover;
+}
+
+.texto-hero {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.texto-destaque {
+    color: orange;
+    text-decoration: underline;
+    font-weight: bolder;
 }
